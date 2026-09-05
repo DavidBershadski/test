@@ -1,0 +1,22 @@
+.button{
+  background-color: #4caf50;
+  color: white;
+  border: 1px solid black;
+  height: 50px;
+  width: 100px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 8px;
+  font-weight: bold;
+}
+.button-delete{
+  background-color: #f44336;
+  color: white;
+  border: 1px solid black;
+  height: 50px;
+  width: 100px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 8px;
+  font-weight: bold;
+}
