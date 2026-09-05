@@ -3,11 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Todo Board</title>
+    <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-    <P>sdkmadfbjnpdfskmodfbnl[
-        
-    </P>
+    <div class="wrapper">
+        <header class="wrapper-header">
+            <label for="search">
+                <input type="text" placeholder="Search..." id="search">
+                <span>&times;</span>
+            </label>
+            <div class="filter">
+                <span>Фільтр:</span>
+                <button class="filter-btn active" data-filter="all">Всі</button>
+                <button class="filter-btn" data-filter="done">Виконані</button>
+            </div>
+            <div class="sortuvania">
+                <span>Сортувати:</span>
+                <button class="sort-btn" data-sort="alphavite">А-Я</button>
+            </div>
+            <button id="add-column-btn">+ Нова колонка</button>
+        </header>
+        <main>
+            <div id="products" class="product-wrapper"></div>
+        </main>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
