@@ -1,22 +1,98 @@
-.button{
-  background-color: #4caf50;
-  color: white;
-  border: 1px solid black;
-  height: 50px;
-  width: 100px;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-top: 8px;
-  font-weight: bold;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #000;
+    color: #fff;
+}
+.wrapper {
+    position: relative;
+    width: 1000px;
+    min-height: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(180deg, #000 0%, #8A48E2 30%, #000 100%);
+}
+.wrapper-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+header label {
+    position: relative;
+}
+header label span {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+
+}
+input {
+    width: 270px;
+    padding: 10px 35px 10px 10px;
+    border-radius: 10px;
+    background: #000;
+    color: #fff;
+    border: 2px solid #79229e;
+    box-shadow: 0 2px 4px gray;
+}
+input:focus { 
+    outline: #3a3adb solid 1.5px; 
+}
+::placeholder { 
+    color: #fff; 
+}
+
+ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 270px;
+    max-height: 200px;
+    margin: 5px 0 0;
+    padding: 0;
+    list-style: none;
+    background: #000;
+    border: 1px solid #79229e;
+    border-radius: 10px;
+    overflow-y: auto;
+    z-index: 10;
+}
+ul li {
+    padding: 10px; 
+    cursor: pointer; 
+}
+.filter-btn, .sort-btn, #add-column-btn {
+    background-color: #8A48E2;
+    color: #fff;
+    border: 1px solid #79229e;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+.filter-btn {
+    box-shadow: 0 0 10px rgba(138, 72, 226, 0.9);
+}
+.delete-column-btn {
+    background-color: #f44336;
+    border-color: #d32f2f;
+    box-shadow: none;
+}
+.button {
+    background-color: #4be248;
+    color: #fff;
+    border: 1px solid #2f852e;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-weight: bold;
 }
 .button-delete{
-  background-color: #f44336;
-  color: white;
-  border: 1px solid black;
-  height: 50px;
-  width: 100px;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-top: 8px;
-  font-weight: bold;
+    background-color: #f44336;
+    color: #fff;
+    border: 1px solid #d32f2f;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-weight: bold;
 }
