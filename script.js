@@ -11,9 +11,10 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         const column = document.createElement("div");
-
+        column.classList.add("column-wrapper");
+        
         column.innerHTML = `
-            <h2>${name}</h2>
+            <h2 class="nova-kolonka">${name}</h2>
             <button class="button">Додати підпис (натисніть)</button>
             <button class="button-delete">Видалити колонку</button>
             
