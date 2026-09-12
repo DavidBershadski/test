@@ -1,22 +1,167 @@
-.button{
-  background-color: #4caf50;
-  color: white;
-  border: 1px solid black;
-  height: 50px;
-  width: 100px;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-top: 8px;
-  font-weight: bold;
+* {
+    box-sizing: border-box;
 }
-.button-delete{
-  background-color: #f44336;
-  color: white;
-  border: 1px solid black;
-  height: 50px;
-  width: 100px;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-top: 8px;
-  font-weight: bold;
+ 
+body {
+    font-family: system-ui, Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 20px;
 }
+ 
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+ 
+.wrapper-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    background: #fff;
+    padding: 16px 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+ 
+.wrapper-header label {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+ 
+.wrapper-header input#search {
+    padding: 8px 28px 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+ 
+#search-clear {
+    position: absolute;
+    right: 8px;
+    cursor: pointer;
+    color: #888;
+    user-select: none;
+}
+ 
+.filter,
+.sortuvania {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+ 
+.filter-btn,
+.sort-btn {
+    background: #eee;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 13px;
+}
+ 
+.filter-btn.active,
+.sort-btn.active {
+    background-color: #2196f3;
+    color: white;
+    border-color: #2196f3;
+}
+ 
+#add-column-btn {
+    margin-left: auto;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+ 
+.product-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: flex-start;
+}
+ 
+.column {
+    background: #fff;
+    border-radius: 8px;
+    padding: 14px;
+    width: 280px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+ 
+.column-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+ 
+.column-header h2 {
+    font-size: 16px;
+    margin: 0;
+    word-break: break-word;
+}
+ 
+.column-status {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+ 
+.status-square {
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background: #fff;
+    cursor: pointer;
+    transition: background-color 0.15s, border-color 0.15s;
+}
+ 
+.status-square.active {
+    background-color: #4caf50;
+    border-color: #4caf50;
+}
+ 
+.empty-state {
+    color: #999;
+    font-style: italic;
+    padding: 20px;
+}
+ 
+.button {
+    background-color: #4caf50;
+    color: white;
+    border: 1px solid black;
+    height: 32px;
+    padding: 0 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12px;
+}
+ 
+.button-delete {
+    background-color: #f44336;
+    color: white;
+    border: 1px solid black;
+    height: 32px;
+    padding: 0 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12px;
+    flex-shrink: 0;
+}
+ 
